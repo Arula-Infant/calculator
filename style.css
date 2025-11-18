@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 100px; */
+}
+body main .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid black;
+  background: black;
+  height: 100;
+  /* width: 400px; */
+  padding: 25px 25px;
+  text-align: center;
+  border-radius: 25px;
+}
+body main .container input {
+  width: 100%;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+body main .container table tbody tr td button {
+  padding: 16px 23px;
+  border-radius: 55px;
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 2em;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: white;
+  background: gray;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+body
+  main
+  .container
+  table
+  tbody
+  tr:nth-last-child(1)
+  td:nth-last-child(1)
+  button {
+  background-color: orange;
+}
+body main .container table tbody tr td button:hover {
+  color: black;
+  background: white;
+  transform: scale(0.9);
+}
+@media (max-width: 770px) {
+  body main {
+    margin: 10px;
+  }
+  body main .container table tbody tr td button {
+    padding: 16px 23px;
+    border-radius: 100%;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 1em;
+    font-weight: 600;
+
+  }
+  body main .container {
+  padding: 10px 10px;
+  text-align: center;
+ 
+}
+body main .container input {
+  width: 100%;
+
+}
+}
